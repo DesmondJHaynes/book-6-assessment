@@ -1,0 +1,33 @@
+{   "users":
+        [{
+        "id": 1,
+        "name": "Renato Cicchillo",
+        "email": "rcicchillo0@slideshare.net"
+        }, {
+        "id": 2,
+        "name": "Desire Rawson",
+        "email": "drawson1@i2i.jp"
+        }, {
+        "id": 3,
+        "name": "Chloette Want",
+        "email": "cwant2@noaa.gov"
+        }, {
+        "id": 4,
+        "name": "Hunter Pavolini",
+        "email": "hpavolini3@uiuc.edu"
+        }, {
+        "id": 5,
+        "name": "Sunny Behnen",
+        "email": "sbehnen4@ibm.com"
+        }, {
+        "id": 6,
+        "name": "Trina Dilliston",
+        "email": "tdilliston5@google.ru"
+        }],
+
+    "letters":
+    [
+
+    ]
+}
+

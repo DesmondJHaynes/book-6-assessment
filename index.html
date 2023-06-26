@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-6-assesment</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Pen Pal Society</h1>
+
+    </header>
+    
+    <main>
+        <h3 class="label--author">Author</h3>
+        <div class="section--author">
+        <!-- <select name="author" id="selectAuthor">
+            <option value="author--1"></option>
+        </select> -->
+    </div>
+    
+    <h3 class="label--textArea">What's on your mind?</h3>
+    <div class="section--textArea">
+        <textarea name="textarea" id="textarea" cols="" rows="10" minlength="1" maxlength="300" 
+            placeholder="Please limit your message to 300 characters or less..."></textarea>
+    </div>
+    
+    <h3 class="label--letterTopics">Letter Topics</h3>
+    <div class="section--letterTopics">
+        <input type="radio" name="letterTopics" id="letterTopics--1"/>Congratulations
+        <input type="radio" name="letterTopics" id="letterTopics--2"/>Save the Date
+        <input type="radio" name="letterTopics" id="letterTopics--3"/>Just Saying "Hi"
+        <input type="radio" name="letterTopics" id="letterTopics--4"/>Official Challenge
+        <input type="radio" name="letterTopics" id="letterTopics--5"/>Declaration of Love
+        <input type="radio" name="letterTopics" id="letterTopics--6"/>Declaration of Hate
+    </div>
+    
+    <h3 class="label--recipient">Recipient</h3>
+    <div class="section--recipient">
+        <select name="recipient" id="selectRecipient">
+            <option value="recipient--1"></option>
+        </select><br>
+    </div>
+    
+        <button class="sendLetter button" id="sendLetter">Send</button>
+    
+    <h2 class="label--letters">Letters</h3>
+    <div class="section--letters">
+        Letters should populate here....
+    </div>
+
+    </main>
+
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
