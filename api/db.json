@@ -28,6 +28,26 @@
     "letters":
     [
 
-    ]
+    ],
+    "categories":
+    [{
+        "id" : 1,
+        "topic": "Congratulations"
+    },{
+        "id" : 2,
+        "topic": "Save the Date"
+    },{
+        "id" : 3,
+        "topic": "Just Saying 'Hi'"
+    },{
+        "id" : 4,
+        "topic": "Official Challenge"
+    },{
+        "id" : 5,
+        "topic": "Declaration of Love"
+    },{
+        "id" : 6,
+        "topic": "Declaration of Hate"
+    }]
 }
 

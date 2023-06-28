@@ -1,6 +1,10 @@
-document.addEventListener("click", event => {
-    if (event.target.id === "sendLetter") {
+// import { generateLetterObj } from "../../api/dataAccess.js"
 
-    //do nothing for now. lol    
-    }
-})
+// document.addEventListener("click", event => {
+//     if (event.target.id === "sendLetter") {
+    
+//     console.log(hi)
+//     let GLO = generateLetterObj()
+//     console.log(GLO)
+//     }
+// })
