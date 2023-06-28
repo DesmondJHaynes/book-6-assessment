@@ -1,53 +1,86 @@
-{   "users":
-        [{
-        "id": 1,
-        "name": "Renato Cicchillo",
-        "email": "rcicchillo0@slideshare.net"
-        }, {
-        "id": 2,
-        "name": "Desire Rawson",
-        "email": "drawson1@i2i.jp"
-        }, {
-        "id": 3,
-        "name": "Chloette Want",
-        "email": "cwant2@noaa.gov"
-        }, {
-        "id": 4,
-        "name": "Hunter Pavolini",
-        "email": "hpavolini3@uiuc.edu"
-        }, {
-        "id": 5,
-        "name": "Sunny Behnen",
-        "email": "sbehnen4@ibm.com"
-        }, {
-        "id": 6,
-        "name": "Trina Dilliston",
-        "email": "tdilliston5@google.ru"
-        }],
-
-    "letters":
-    [
-
-    ],
-    "categories":
-    [{
-        "id" : 1,
-        "topic": "Congratulations"
-    },{
-        "id" : 2,
-        "topic": "Save the Date"
-    },{
-        "id" : 3,
-        "topic": "Just Saying 'Hi'"
-    },{
-        "id" : 4,
-        "topic": "Official Challenge"
-    },{
-        "id" : 5,
-        "topic": "Declaration of Love"
-    },{
-        "id" : 6,
-        "topic": "Declaration of Hate"
-    }]
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Renato Cicchillo",
+      "email": "rcicchillo0@slideshare.net"
+    },
+    {
+      "id": 2,
+      "name": "Desire Rawson",
+      "email": "drawson1@i2i.jp"
+    },
+    {
+      "id": 3,
+      "name": "Chloette Want",
+      "email": "cwant2@noaa.gov"
+    },
+    {
+      "id": 4,
+      "name": "Hunter Pavolini",
+      "email": "hpavolini3@uiuc.edu"
+    },
+    {
+      "id": 5,
+      "name": "Sunny Behnen",
+      "email": "sbehnen4@ibm.com"
+    },
+    {
+      "id": 6,
+      "name": "Trina Dilliston",
+      "email": "tdilliston5@google.ru"
+    }
+  ],
+  "letters": [
+    {
+      "authorId": 2,
+      "recipientId": 3,
+      "message": "hey...wanna chat?",
+      "categoryId": 3,
+      "date": "6/28/2023",
+      "id": 1
+    },
+    {
+      "authorId": 3,
+      "recipientId": 2,
+      "message": "...Desire, please leave me alone. I'm not feeling it today.",
+      "categoryId": null,
+      "date": "6/28/2023",
+      "id": 2
+    },
+    {
+      "authorId": 1,
+      "recipientId": 2,
+      "message": "OH SNAP!!!! DENIED BRO! 😮😂😂",
+      "categoryId": null,
+      "date": "6/28/2023",
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "topic": "Congratulations"
+    },
+    {
+      "id": 2,
+      "topic": "Save the Date"
+    },
+    {
+      "id": 3,
+      "topic": "Just Saying 'Hi'"
+    },
+    {
+      "id": 4,
+      "topic": "Official Challenge"
+    },
+    {
+      "id": 5,
+      "topic": "Declaration of Love"
+    },
+    {
+      "id": 6,
+      "topic": "Declaration of Hate"
+    }
+  ]
 }
-

@@ -1,3 +1,7 @@
 textarea {
     width: 90vw;
 }
+
+.letter {
+    border: 1px dotted black;
+}

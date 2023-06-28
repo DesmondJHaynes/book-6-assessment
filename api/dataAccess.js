@@ -3,10 +3,11 @@ import { docSelect } from "../scripts/PenPals.js"
 const dataStorage = 
 {
     users:[],
-    categories:{},
+    categories:[],
     letters:[],
     author: {},
     recipient: {},
+    message : '',
     categoryId: null
 }
 
@@ -40,7 +41,17 @@ export const postLetter = (letterObj) => {
         body: JSON.stringify(letterObj)
     } 
     return fetch("http://localhost:8088/letters", fetchOptions)
+        .then(res => res.json())
+        .then(()=>document.dispatchEvent(new CustomEvent("updateLetters")))
     
+}
+
+
+//delete Handlers
+export const deleteLetter = (id) => {
+    return fetch(`http://localhost:8088/letters/${id}`, {method : "DELETE"})
+        .then(() => console.log("delete"))
+        .then(()=>document.dispatchEvent(new CustomEvent("updateLetters")))
 }
 
 
@@ -54,7 +65,6 @@ export const getUsers = () => {
 export const getCategories = () => {
     return dataStorage.categories.map(category => ({...category}))
 }
-
 export const getLetters = () => {
     return dataStorage.letters.map((letter)=>({...letter}))
 }
@@ -76,18 +86,49 @@ export const setRecipient = (recipientObj) => {
 export const setCategoryId = (categoryId) => {
     return dataStorage.categoryId = categoryId
 }
+export const setMessage = () => {
+    return dataStorage.message = docSelect("textarea[name='textarea']").value
+}
 
 //temp-state...in retrospect I should've just created an empty object for the temporary state that holds all these variables instead of putting it all in data-storage... it just looks goofy.
 // consider this seperation style "api temp dataStorage" and "inputs temp dataStorage"
 export const generateLetterObj = () => {
+    const date = new Date().toLocaleDateString()
+    
     const letterObject = 
     {
         authorId : dataStorage.author.id,
         recipientId : dataStorage.recipient.id,
-        message : docSelect("textarea[name='textarea']").value,
-        categoryId : dataStorage.categoryId
-
+        message : dataStorage.message,
+        categoryId : dataStorage.categoryId,
+        date : date
     }
     return letterObject
-
 }
+
+
+export const resetDataStorage = () =>{
+    dataStorage.author = {}
+    dataStorage.recipient = {}
+    dataStorage.message = null
+    dataStorage.categoryId =null
+    docSelect("textarea[name='textarea']").value = ''
+}
+
+// event listener to "submit/send" letter
+document.addEventListener("click", event => {
+    if (event.target.id === "sendLetter") {
+        setMessage()
+
+        if (dataStorage.author.id &&
+            dataStorage.recipient.id &&
+            dataStorage.message
+            ) {
+            console.log("letter sent")
+            const letterObj = generateLetterObj()
+            resetDataStorage()
+            postLetter(letterObj)    
+        }
+    }
+})
+
