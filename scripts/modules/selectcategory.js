@@ -7,7 +7,7 @@ export const selectCategory = () => {
   let html = ""
 
   for (const category of categories) {
-    html += `<input type="radio" name="letterTopics" id="letterTopics--${category.id}"/>${category.topic}`
+    html += `<div class="radios"><input type="radio" name="letterTopics" id="letterTopics--${category.id}"/>${category.topic}</div>`
   }
 
   return html 

@@ -8,7 +8,7 @@ export const selectRecipient = () => {
 
     if (authorObj.id) {
         html = 
-        `<select name="recipient" id="selectRecipient">
+        `<select class="select" name="recipient" id="selectRecipient">
         <option value="user--0">Select User</option>`
         
         users.map((user)=> {

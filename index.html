@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>book-6-assesment</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,100,400,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,10 +16,10 @@
     <main>
         <h3 class="label--author">Author</h3>
         <div class="section--author">
-        <!-- <select name="author" id="selectAuthor">
+        <!-- <select class="select" name="author" id="selectAuthor">
             <option value="author--1"></option>
         </select> -->
-    </div>
+        </div>
     
     <h3 class="label--textArea">What's on your mind?</h3>
     <div class="section--textArea">
@@ -26,7 +27,15 @@
             placeholder="Please limit your message to 300 characters or less..."></textarea>
     </div>
     
+    <h3 class="label--recipient">Recipient</h3>
+    <div class="section--recipient">
+        <!-- <select class="select" name="recipient" id="selectRecipient">
+            <option value="recipient--1"></option>
+        </select><br> -->
+    </div>
+
     <h3 class="label--letterTopics">Letter Topics</h3>
+    <h5 class="label--subheading">(optional)</h5>
     <div class="section--letterTopics">
         <!-- <input type="radio" name="letterTopics" id="letterTopics--1"/>Congratulations
         <input type="radio" name="letterTopics" id="letterTopics--2"/>Save the Date
@@ -36,26 +45,20 @@
         <input type="radio" name="letterTopics" id="letterTopics--6"/>Declaration of Hate -->
     </div>
     
-    <h3 class="label--recipient">Recipient</h3>
-    <div class="section--recipient">
-        <select name="recipient" id="selectRecipient">
-            <option value="recipient--1"></option>
-        </select><br>
+    <div class="sendLetter">
+        <button class="sendLetter button" id="sendLetter">Send</button>
     </div>
     
-        <button class="sendLetter button" id="sendLetter">Send</button>
-    
-    <h3 class="label--letters">Letters</h3>
-    <h5 class="label--letters subheading">(optional)</h5>
+    <h2 class="label--letters">Letters</h2>
         <div class="section--letters">
-            <div class="letter">
+            <!-- <div class="letter">
                 <p class="message letterHead">dear Recipient name + email,</p>
                 <p class="message letterBody">message</p>
                 <p class="message letterFoot">sincerely, Author name + email</p>
                 <p class="message letterDate">sent on date (small text)</p>
                 <button class="button" id="letterDelete--1">Delete</button>
                 <div class="letterCategory">category css</div>
-            </div>
+            </div> -->
         </div>
 
     </main>

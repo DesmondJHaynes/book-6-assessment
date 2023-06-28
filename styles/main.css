@@ -1,7 +1,100 @@
+body {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    margin: 0 2em;
+}
+
+header {
+    text-align: center;
+   
+}
+
+h3,h5 {
+    margin-bottom: .25em;
+}
+
+h1 {
+    text-align: left;
+    display: inline-block;
+    border-bottom: 1.5px solid;
+    /* border-top: 1px solid; */
+    margin-bottom: 0;
+    padding-inline: 4em;
+    padding-bottom: .25rem;
+    font-weight: 900;
+
+}
+
+textarea, .select, .section--letterTopics {
+    width: 90svw;
+    border-radius: 6px;
+
+    
+}
+
+.label--letterTopics {
+    margin-bottom: 0 
+}
+h5 {
+    margin-top: 0;
+    color:rgb(49, 49, 49)
+}
+
+.label--textArea{
+    margin-top: 2rem
+}
+
 textarea {
-    width: 90vw;
+    width: 89.5vw;
+    border-radius: 6px;
+    margin-bottom: 0.25rem;
+}
+
+.select {
+padding: .5em;
+}
+
+.section--recipient {
+    margin-bottom: 2em;
+}
+
+.section--letterTopics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: .2em;
+    margin-bottom: 1%;
+}
+
+.radios {
+    border: 1px rgb(81, 81, 116) solid;
+    padding: .5em;
+    border-radius: 6px;
 }
 
 .letter {
     border: 1px dotted black;
+}
+
+#sendLetter {
+    /* padding: .5em 2rem; */
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.658);
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+    color: rgb(245, 245, 245);
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight:400;
+    font-size: larger;
+}
+
+.sendLetter {   
+    width: 90vw;
+    margin-top: .5rem;
+    padding: 1em 0;
+    margin-bottom: 2.5em;
+}
+
+.section--letters {
+
 }
