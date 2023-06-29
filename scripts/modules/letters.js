@@ -20,18 +20,24 @@ const letterBuilder = (letter) => {
     const recipient = users.find(user => user.id === letter.recipientId)
     const author = users.find(user => user.id === letter.authorId)
     const category = categories.find(cat => cat.id === letter.categoryId)
-
-    htmlString += ` 
-        <p class="message letterHead">Dear ${recipient.name} ${recipient.email},</p>
-        <p class="message letterBody">${letter.message}</p>
-        <p class="message letterFoot">Sincerely, ${author.name} ${author.email}</p>
-        <p class="message letterDate">Sent on ${letter.date}</p>`
     
     if (category) {
         htmlString += `<div class="letterCategory">${category.topic}</div>`
     }
+    htmlString += ` 
+        <p class="message letterHead">Dear ${recipient.name},
+        <br> <span class="email">(${recipient.email})</span></p>
 
-    htmlString += `<button class="button" id="letterDelete--${letter.id}">Delete</button></div>`
+        <p class="message letterBody">${letter.message}</p>
+
+        <p class="message letterFoot">Sincerely, <br>${author.name} <br> <span class="email"> (${author.email})</span></p>
+        <div class="delete-button-container">
+        <button class="delete-button" id="letterDelete--${letter.id}">Delete</button></div>
+
+        <p class="message letterDate">Sent on ${letter.date}</p>`
+    
+
+    htmlString += `</div>`
 
     return htmlString
 

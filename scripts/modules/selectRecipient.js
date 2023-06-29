@@ -20,7 +20,7 @@ export const selectRecipient = () => {
     } else {
 
         html = 
-        `Please select an author first. <br><select name="recipient" id="selectRecipient">
+        `Please select an author first. <br><select class="pre-select" name="recipient" id="selectRecipient">
         <option value="user--0">Select User</option>
         </select>`
 

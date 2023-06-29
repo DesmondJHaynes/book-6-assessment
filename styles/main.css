@@ -1,15 +1,12 @@
 body {
-    font-family: 'Cabinet Grotesk', sans-serif;
+    font-family: 'Oswald', serif;
     margin: 0 2em;
+    background-color: rgb(255, 255, 254);
 }
 
 header {
     text-align: center;
-   
-}
-
-h3,h5 {
-    margin-bottom: .25em;
+    
 }
 
 h1 {
@@ -20,23 +17,39 @@ h1 {
     margin-bottom: 0;
     padding-inline: 4em;
     padding-bottom: .25rem;
-    font-weight: 900;
+    font-weight:800;
 
 }
 
-textarea, .select, .section--letterTopics {
-    width: 90svw;
-    border-radius: 6px;
-
-    
+h3,h5 {
+    margin-bottom: .25em;
+    font-weight: 400;
 }
 
-.label--letterTopics {
-    margin-bottom: 0 
-}
 h5 {
     margin-top: 0;
     color:rgb(49, 49, 49)
+}
+
+textarea, .pre-select, .select, .section--letterTopics {
+    width: 90vw;
+    border-radius: 6px;
+}
+
+.select {
+    padding: .5em;
+    font-family: 'Oswald', serif;
+    font-weight: 400;
+    color: black;
+}
+
+.pre-select {
+    padding: .5em;
+    font-family: 'Oswald', serif;
+    font-weight: 400;
+    color: black;
+    width: 30svw;
+    
 }
 
 .label--textArea{
@@ -44,17 +57,19 @@ h5 {
 }
 
 textarea {
-    width: 89.5vw;
+    width: 88.5vw;
     border-radius: 6px;
     margin-bottom: 0.25rem;
+    padding: 1em;
 }
 
-.select {
-padding: .5em;
-}
 
 .section--recipient {
     margin-bottom: 2em;
+}
+
+.label--letterTopics {
+    margin-bottom: 0 
 }
 
 .section--letterTopics {
@@ -69,10 +84,17 @@ padding: .5em;
     border: 1px rgb(81, 81, 116) solid;
     padding: .5em;
     border-radius: 6px;
+    background-color: rgb(19, 19, 19);
+    color: whitesmoke;
+    font-weight: 2;
 }
 
-.letter {
-    border: 1px dotted black;
+
+.sendLetter {   
+    width: 90vw;
+    margin-top: .5rem;
+    padding: 1em 0;
+    margin-bottom: 2.5em;
 }
 
 #sendLetter {
@@ -83,18 +105,69 @@ padding: .5em;
     text-align: center;
     background-color: rgb(12, 12, 12);
     color: rgb(245, 245, 245);
-    font-family: 'Cabinet Grotesk', sans-serif;
+    font-family: 'Oswald', serif;
     font-weight:400;
     font-size: larger;
 }
 
-.sendLetter {   
-    width: 90vw;
-    margin-top: .5rem;
-    padding: 1em 0;
-    margin-bottom: 2.5em;
-}
 
 .section--letters {
+    margin-bottom: 6rem;
+}
+
+.letter {
+    border: none;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.658);
+    border-radius: 6px;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-bottom: 0.2em;
+}
+
+.letterHead, .letterFoot{
+    font-size:medium;
+}
+span {
+    font-size: .8em;
+    margin-top: 0;
+    padding-top: 0;
+}
+.letterBody{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.letterFoot{
+    display: inline-block;
+}
+.letterDate, .letterCategory{
+    display: flex;
+    justify-content: end;
+    font-size: .8em;
+}
+.letterCategory{
+    border-radius: 6px;
+    background-color: rgb(32, 32, 32);
+    padding: .8em;
+    color: white;
+    font-weight:400
+
+}
+.delete-button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.delete-button {
+    font-size: .8em;
+    padding: .8em 2em;
+    margin: 0;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.658);
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(187, 1, 1);
+    color: rgb(245, 245, 245);
+
 
 }
